@@ -1,3 +1,6 @@
+% joinning of all the features developed and classifying the two classes using SVM classifier.
+
+
 clear all;
 originalfeature=importdata('featureori.mat');
 spamfeature=importdata('featurespam.mat');
