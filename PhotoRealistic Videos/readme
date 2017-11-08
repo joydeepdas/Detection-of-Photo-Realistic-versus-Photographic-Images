@@ -1,1 +1,24 @@
 This part forms the  main or essential application of actually classifying human face from computer generated human faces by exploiting rPPG feature of human pulse.
+Though I have lost/missing all the codes , the algortihm wass something like this: 
+The aim is to detect pulse in video signals from human frame. Here human pulse ranges from
+50-80 bpm (bits/min). Thus we expect a shrap peak in this frequency range.
+(1) Crop a video of approx 20sec where over all the frames a face is appearing. Higher the
+total sampling time of video higher resolution in frequency domain.
+(2) From the human face extracted we take ROI from contant regions like around nose and
+forehead, we dont take into account eyes or mouth region as they are subjected to
+change.
+(3) We now we have say (20 sec * 30 frames/sec)= 600 frames of ROI around Nose. Now
+from this we extract the required pulse as follows:-
+(4) From each ROI take mean of intensity in R,G,B i.e 1D vectors of 600 R’s,G’s and B’s.
+(5) We take temporal average from R,G,B such that Rn= average of R’s over a window of
+2n+1, where over this window i.e “n” a pulse must be there. (this step is done for
+averaging and lowering high frequencies while still preserving high frequencies.)
+(6) Similarly for Gn and Bn.
+(7) We then calculate X and Y by formuale :
+(8) X = 3Rn − 2Gn (2)
+(9) Y = 1.5Rn + Gn − 1.5Bn
+(10) We band pass X and Y for 50-80 bpm obtaining Xf and Yf.
+(11) Alpha = standard deviation(Xf)/standard deviation(Yf).
+(12) Now we define a pulse signal ,p = Xf - alpha * Yf;
+(13) Take the take the FFT of Pulse signal p , sharp peak near 50-80 is observed for
+human face and arbitrary pics for CG face.
