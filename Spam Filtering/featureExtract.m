@@ -1,3 +1,5 @@
+% Firstly feature from natural images are taken , then these feature is saved and secondly for spam images.
+
 naturalimages=importdata('NaturalImages_rgb.mat');
 %spamimages=importdata('SpamImages_rgb.mat');
 [m,n]=size(naturalimages);
@@ -11,3 +13,5 @@ for i=1:n
     
     featureori(i)=f;
 end
+% save it as featureori.mat
+% forspamimages save it as featurespam.mat
