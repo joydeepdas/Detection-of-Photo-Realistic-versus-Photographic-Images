@@ -1,5 +1,4 @@
 This part forms the  main or essential application of actually classifying human face from computer generated human faces by exploiting rPPG feature of human pulse.
-Though I have lost/missing all the codes , the algortihm wass something like this: 
 The aim is to detect pulse in video signals from human frame. Here human pulse ranges from
 50-80 bpm (bits/min). Thus we expect a shrap peak in this frequency range.
 (1) Crop a video of approx 20sec where over all the frames a face is appearing. Higher the
