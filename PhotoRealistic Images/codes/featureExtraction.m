@@ -1,4 +1,5 @@
 clear all;
+% load the natural or spam  .mat files and extract LBC feature from them . And finally save as featureori.mat and CGIfeature.mat
 naturalimages=importdata('natural500_ori_ucidv2.mat');
 [m,nn]=size(naturalimages);
 th=1;
