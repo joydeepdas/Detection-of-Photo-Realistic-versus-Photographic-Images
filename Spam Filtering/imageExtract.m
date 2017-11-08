@@ -12,3 +12,4 @@ for i = 1:length(imagefiles)
         ii=ii+1;
     end
 end
+% save the 'saveimage' from workspace to Naturalimages_rgb.mat
