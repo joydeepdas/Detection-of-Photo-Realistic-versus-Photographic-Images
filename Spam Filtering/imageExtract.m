@@ -1,5 +1,6 @@
 clear all;
 data_location = 'NaturalImages/';
+data_location = 'SpamImages/';
 imagefiles = dir([data_location '*.jpg']);
 ii=1;
 for i = 1:length(imagefiles)
@@ -13,3 +14,4 @@ for i = 1:length(imagefiles)
     end
 end
 % save the 'saveimage' from workspace to Naturalimages_rgb.mat
+% For spam images save as SpamImages_rgb.mat
