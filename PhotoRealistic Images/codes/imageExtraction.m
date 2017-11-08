@@ -12,3 +12,4 @@ for i = 1:length(imagefiles)
         ii=ii+1;
     end
 end
+% save images as natural.mat and CGI.mat resp
