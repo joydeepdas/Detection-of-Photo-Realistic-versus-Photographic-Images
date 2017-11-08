@@ -11,4 +11,8 @@ Order of following the files :
 2. FeatureExtract.m
 3. HistFeatureExtract.m
 4. modified.m
-5. classification.m
+
+Classifiaction method :
+5. classification.m (using f1 + f2 +f3)
+6. test_train.m (using f1 + f2 ) (paper features)
+7.
