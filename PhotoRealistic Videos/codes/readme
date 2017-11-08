@@ -1,1 +1,9 @@
 
+Follow the code in this order :
+1.generateforgenose.m --> generates only nose portion from Genuine/ Forge videos . Then save as x.mat for original and xx.mat for forged in 
+data folder.
+2. feature_extract.mat --> On nose portion i.e ../x.mat file apply the feature mentioned to get X and Y and then save the variable as _X.mat and _Y.mat 
+3.final_pulseXtract.m --> shows the final output image by band limiting between 50~80bps. 
+Helper functions :
+1. finadmean.m
+2.videostoimagesave.m
