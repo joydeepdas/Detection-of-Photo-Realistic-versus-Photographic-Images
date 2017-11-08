@@ -1,3 +1,4 @@
+% classification using only features as par mentioned in paper i.e f1 and f2
 clear all;
 originalfeature=importdata('featureori.mat');
 spamfeature=importdata('featurespam.mat');
