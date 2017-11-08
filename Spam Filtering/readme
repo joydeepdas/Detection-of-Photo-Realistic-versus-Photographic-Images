@@ -14,5 +14,5 @@ Order of following the files :
 
 Classifiaction method :
 5. classification.m (using f1 + f2 +f3)
-6. test_train.m (using f1 + f2 ) (paper features)
-7.
+6. direct_method.m (using f1 + f2 ) (paper features)
+7. test_train
