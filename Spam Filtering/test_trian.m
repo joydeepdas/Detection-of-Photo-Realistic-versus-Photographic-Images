@@ -1,3 +1,5 @@
+% classification using only brightness as feature.
+
 clear all;
 originalfeature=importdata('featureori.mat');
 spamfeature=importdata('featurespam.mat');
