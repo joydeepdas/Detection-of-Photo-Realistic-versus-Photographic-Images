@@ -1,6 +1,14 @@
 It deals with the classification of spam images versus natural images. The datasets are small and can be fetched from here.
 Link ->https://drive.google.com/open?id=1ve2jRgZmKUZrjqIUNbplazUmD5_tz31n
 
+Helper Files :
+1.rgb2hsl.m
+2.plot_paper1.m
+
+
 Order of following the files :
 1. ImageExtract.m
 2. FeatureExtract.m
+3. HistFeatureExtract.m
+4. modified.m
+5. classification.m
