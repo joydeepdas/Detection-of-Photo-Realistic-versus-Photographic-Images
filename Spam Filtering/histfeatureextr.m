@@ -1,4 +1,5 @@
 %naturalimages=importdata('NaturalImages_rgb.mat');
+% In addition to the existing feature histogram peaks are taken into account.
 spamimages=importdata('SpamImages_rgb.mat');
 [m,n]=size(spamimages);
 for ii=1:n
@@ -23,7 +24,5 @@ for ii=1:n
     f(ii)=result; 
 end
 
-
-
-%% 
+% Save this as featureorihist.mat or featurespamhist.mat
 
